@@ -187,10 +187,10 @@ public class NumberUtilitiesTest {
     @Test
     public void testGetOddNumbers() {
         // : Given
-        String expected = "681012141618";
+        String expected = "5791113151719";
         int start = 5;
         int stop = 20;
-        int step = 5;
+
 
         // : When
         String actual = NumberUtilities.getOddNumbers(start, stop);
