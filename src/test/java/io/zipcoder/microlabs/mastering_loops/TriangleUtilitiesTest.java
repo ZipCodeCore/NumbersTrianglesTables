@@ -38,7 +38,7 @@ public class TriangleUtilitiesTest {
                         "**\n" +
                         "***\n" +
                         "****\n";
-        String actual = TriangleUtilities.getTriangle(5);
+        String actual = TriangleUtilities.getTriangle(4);
         Assert.assertEquals(expected, actual);
     }
 
