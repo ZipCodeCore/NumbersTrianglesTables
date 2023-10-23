@@ -7,6 +7,8 @@ import org.junit.Test;
  * Created by leon on 1/31/18.
  */
 public class TableUtilitiesTest {
+
+    TableUtilities table = new TableUtilities();
     @Test
     public void testGetLargeMultiplicationTable() {
         String expected =
@@ -21,7 +23,7 @@ public class TableUtilitiesTest {
                 "  9 | 18 | 27 | 36 | 45 | 54 | 63 | 72 | 81 | 90 |\n" +
                 " 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 |100 |\n";
 
-        String actual = TableUtilities.getLargeMultiplicationTable();
+        String actual = table.getLargeMultiplicationTable();
         Assert.assertEquals(expected, actual);
     }
 
@@ -35,7 +37,7 @@ public class TableUtilitiesTest {
                         "  4 |  8 | 12 | 16 | 20 |\n" +
                         "  5 | 10 | 15 | 20 | 25 |\n";
 
-        String actual = TableUtilities.getSmallMultiplicationTable();
+        String actual = table.getSmallMultiplicationTable();
         Assert.assertEquals(expected, actual);
     }
 
@@ -62,7 +64,7 @@ public class TableUtilitiesTest {
                 " 18 | 36 | 54 | 72 | 90 |108 |126 |144 |162 |180 |198 |216 |234 |252 |270 |288 |306 |324 |342 |360 |\n" +
                 " 19 | 38 | 57 | 76 | 95 |114 |133 |152 |171 |190 |209 |228 |247 |266 |285 |304 |323 |342 |361 |380 |\n" +
                 " 20 | 40 | 60 | 80 |100 |120 |140 |160 |180 |200 |220 |240 |260 |280 |300 |320 |340 |360 |380 |400 |\n";
-        String actual = TableUtilities.getMultiplicationTable(20);
+        String actual = table.getMultiplicationTable(20);
         Assert.assertEquals(expected, actual);
     }
 
